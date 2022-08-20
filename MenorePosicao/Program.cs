@@ -29,10 +29,8 @@ namespace MenorePosicao
                 {
                     menorNumero = vetor[i];
                     posicao = i;
-                }
-                   
+                }   
             }
-
             Console.WriteLine();
             Console.WriteLine("Menor valor: " + menorNumero);
             Console.WriteLine();
