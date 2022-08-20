@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MenorePosicao
 {
@@ -6,13 +6,13 @@ namespace MenorePosicao
     {
         static void Main(string[] args)
         {
-            
+
             Console.WriteLine("Quantos números vai inserir?");
             var quantidade = int.Parse(Console.ReadLine());
             string[] separar = Console.ReadLine().Split(' ');
-           
+
             int[] vetor = new int[quantidade];
-            var menorNumero = vetor[0];
+            var menorNumero = 0;
             var posicao = 0;
 
             for (int i = 0; i < quantidade; i++)
@@ -25,6 +25,12 @@ namespace MenorePosicao
                     menorNumero = vetor[i];
                     posicao = i;
                 }
+                else if (i == 0)
+                {
+                    menorNumero = vetor[i];
+                    posicao = i;
+                }
+                   
             }
 
             Console.WriteLine();
